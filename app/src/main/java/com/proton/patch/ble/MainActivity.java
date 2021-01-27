@@ -32,8 +32,8 @@ public class MainActivity extends AppCompatActivity {
         EcgPatchManager ecgPatchManager = EcgPatchManager.getInstance("C4:A1:1B:19:BB:C7");
         ecgPatchManager.setDataListener(new DataListener() {
             @Override
-            public void receiveBluetoothData(byte[] data) {
-                Log.e(TAG, "蓝牙数据:" + data.length);
+            public void receiveEcgRawData(byte[] bytes) {
+                Log.e(TAG, "蓝牙数据:" + bytes.length);
             }
 
             @Override
