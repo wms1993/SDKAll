@@ -35,5 +35,10 @@ dependencies {
     testImplementation 'junit:junit:4.13.1'
     androidTestImplementation 'androidx.test.ext:junit:1.1.2'
     androidTestImplementation 'androidx.test.espresso:espresso-core:3.3.0'
+    //心电贴蓝牙sdk
     implementation 'com.proton.ecg.patch:ble:1.0.2'
+    //心电滤波算法sdk
+    implementation 'com.proton.ecg:alg:1.0.5'
+    //心电图绘制sdk
+    implementation 'com.proton:protonecg:1.2.1'
 }
